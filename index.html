@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VUE Email Lista</title>
+    <title>VUE Email List</title>
     <!-- CSS style custom -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- AXIOS cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- VUE script -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-    
+    <div id="app">
+        <header></header>
+        <main>
+            <ul>
+                <li v-for="email in emails">{{ email }}</li>
+            </ul>
+        </main>
+    </div>
     <!-- CUSTOM JS SCRIPT -->
     <script src="js/script.js"></script>
 </body>
